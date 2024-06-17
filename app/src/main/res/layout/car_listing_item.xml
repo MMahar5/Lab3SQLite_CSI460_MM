@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/system_neutral1_900">
+
+
+    <ImageView
+        android:id="@+id/imgCar"
+        android:layout_width="334dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/car_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/yearTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:inputType="number"
+        android:text="Year"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/imgCar"
+        app:layout_constraintTop_toBottomOf="@+id/imgCar" />
+
+    <TextView
+        android:id="@+id/makeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Make"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/yearTxt"
+        app:layout_constraintTop_toBottomOf="@+id/imgCar" />
+
+    <TextView
+        android:id="@+id/modelTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Model"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/makeTxt"
+        app:layout_constraintTop_toBottomOf="@+id/imgCar" />
+
+    <TextView
+        android:id="@+id/colorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Color"
+        android:textColor="@color/GM2_grey_800"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/modelTxt"
+        app:layout_constraintEnd_toStartOf="@+id/milesTxt"
+        app:layout_constraintStart_toEndOf="@+id/modelTxt"
+        app:layout_constraintTop_toTopOf="@+id/modelTxt" />
+
+    <TextView
+        android:id="@+id/milesTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:inputType="number"
+        android:text="Miles"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imgCar"
+        app:layout_constraintTop_toBottomOf="@+id/imgCar" />
+
+    <TextView
+        android:id="@+id/priceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:forceHasOverlappingRendering="false"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="Price"
+        android:textColor="@color/SIM_dark_mode_color_orange"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/imgCar"
+        app:layout_constraintTop_toTopOf="@+id/imgCar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_neutral1_900"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/carMake"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/bright_foreground_dark"
+        android:hint="Make"
+        android:textColor="#989898"
+        android:textColorHint="#888888"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listingTitleTxt" />
+
+    <EditText
+        android:id="@+id/carModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/bright_foreground_dark"
+        android:hint="Model"
+        android:textColor="#989898"
+        android:textColorHint="#888888"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/carMake" />
+
+    <EditText
+        android:id="@+id/carYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/bright_foreground_dark"
+        android:hint="Year"
+        android:inputType="number"
+        android:textColor="#989898"
+        android:textColorHint="#888888"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carModel" />
+
+    <EditText
+        android:id="@+id/carColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/bright_foreground_dark"
+        android:hint="Color"
+        android:textColor="#989898"
+        android:textColorHint="#888888"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carYear" />
+
+    <EditText
+        android:id="@+id/carPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/bright_foreground_dark"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:textColor="#989898"
+        android:textColorHint="#888888"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carMiles" />
+
+    <EditText
+        android:id="@+id/carMiles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/bright_foreground_dark"
+        android:hint="Miles"
+        android:inputType="number"
+        android:textColor="#989898"
+        android:textColorHint="#888888"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carColor" />
+
+    <ImageView
+        android:id="@+id/carImg"
+        android:layout_width="353dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/car_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carPrice" />
+
+    <Button
+        android:id="@+id/imgBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#d5d8dc"
+        android:padding="6dp"
+        android:text="Add Image"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/carImg"
+        app:layout_constraintTop_toBottomOf="@+id/carImg"
+        app:strokeColor="@color/system_neutral1_600"
+        app:strokeWidth="2.5dp" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#d5d8dc"
+        android:padding="6dp"
+        android:text="Submit"
+        android:textColor="#0000ff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/seeAllBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn"
+        app:strokeColor="@color/system_neutral1_600"
+        app:strokeWidth="2.5dp" />
+
+    <Button
+        android:id="@+id/seeAllBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#d5d8dc"
+        android:padding="6dp"
+        android:text="See All Cars"
+        android:textColor="#0000ff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/submitBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn"
+        app:strokeColor="@color/system_neutral1_600"
+        app:strokeWidth="2.5dp" />
+
+    <TextView
+        android:id="@+id/listingTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Add New Listing"
+        android:textAllCaps="false"
+        android:textColor="@color/bright_foreground_dark_disabled"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
