@@ -15,7 +15,8 @@ This is what it looks like after adding the rest of the car listing information
 There are validation checks for the text fields to make sure the information is correct and not missing. If not, then it will show a toast message at the bottom, depending on the issue. The only field that is not required is the image, in which case, it will use the default placeholder.
 ![missingFields](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/c0b0af52-6382-4c78-9af2-f541508625ba)
 
-After clicking the "Submit Ad" button to save the information and then "See All Cars", we can see the full list of car listings, as well as the truck that we just created. 
+After clicking the "Submit Ad" button to save the information and then "See All Cars", we can see the full list of car listings as well as the truck that we just created. 
+
 ![addedToAll-2](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/4bd4bd7e-a49b-41c6-9f8a-3a8d7afdf926)
 
 We can click on any car listing in order to make edits. As you can see, I just clicked on the same one that I just made, which takes us to a page that is similar but with the title of "Edit Listing" and and we have a couple different buttons that say "Update" and "Delete". I've already entered some new information, I lowered the price from $62,350 to $61,500 and changed the image to a slightly different one.
@@ -24,11 +25,9 @@ We can click on any car listing in order to make edits. As you can see, I just c
 After clicking update, we can see that the changes made (price and image) are reflected in our list.
 ![updated-4](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/59e0d0a6-b3b5-4821-9344-93ecb1862aa8)
 
-If I want to go back to edit and delete the vehicle, I just have to click "Delete" and it will show an Alert Dialog to confirm.
-![alertDialog](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/0048e4b0-3547-48d4-ae96-a50dc38d60fd)
+If I want to go back to edit and delete the vehicle, I just have to click "Delete" and it will show an Alert Dialog to confirm. After clicking yes, we can see that the truck has been removed from our list.
 
-We can see that the truck has been removed from our list.
-![allcarsAfterDelete](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/fc9fd98f-1b27-4648-b75b-89119aebaaaa)
+![alertDialog](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/0048e4b0-3547-48d4-ae96-a50dc38d60fd)  ![allcarsAfterDelete](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/fc9fd98f-1b27-4648-b75b-89119aebaaaa)
 
 By using DB Browser, I can view our SQLite database to show different tables, the fields, data points, data types, and so on. This is a fairly simple database, so we just have one table called "myCars". As you can see, the truck I created is not here because I deleted it, but the rest of the cars (only 3) are all shown
 ![db](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/3069d807-0b71-4bea-af4b-3667274af0c8)
