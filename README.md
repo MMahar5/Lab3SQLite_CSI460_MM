@@ -32,6 +32,7 @@ If I want to go back to edit and delete the vehicle, I just have to click "Delet
 ![delete2](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/6192a125-76ec-460e-800a-28de9ba83b17)  
 
 Now we can see that the truck has been removed from our list.
+
 ![allcarsAfterDelete](https://github.com/MMahar5/Lab3SQLite_CSI460_MM/assets/97249776/fc9fd98f-1b27-4648-b75b-89119aebaaaa)
 
 By using DB Browser, I can view our SQLite database to show different tables, the fields, data points, data types, and so on. This is a fairly simple database, so we just have one table called "myCars". As you can see, the truck I created is not here because I deleted it, but the rest of the cars (only 3) are all shown
